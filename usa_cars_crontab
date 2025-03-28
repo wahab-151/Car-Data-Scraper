@@ -1,0 +1,2 @@
+# Run USA Cars scraper once a day at 2:00 AM
+0 2 * * * /bin/bash c:/Users/sid/Desktop/Dijango/USACARSDATASCRAPER/Car-Data-Scraper/run_usa_cars_scraper.sh

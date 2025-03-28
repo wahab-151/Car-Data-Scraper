@@ -63,7 +63,7 @@ class CraigslistScraper:
     def scrape_city(self, city_domain):
         """Scrape vehicle listings for a single city"""
         try:
-            url = f"https://{city_domain}.craigslist.org/search/cta"
+            url = f"https://{city_domain}.craigslist.org/search/cta?bundleDuplicates=1&hasPic=1&postedToday=1#search=2~gallery~0"
             logger.info(f"Scraping {url}")
             
             response = self.session.get(url, timeout=self.timeout)
